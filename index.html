@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0d0d1a">
+    <title>CinéShop — Films & Séries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">🎬</div>
+            <div class="header-text">
+                <h1>CinéShop</h1>
+                <p>Service de renseignements • Films & Séries</p>
+            </div>
+        </div>
+        <div class="header-badge">
+            <span class="online-dot"></span> En ligne
+            <small>Tendances temps réel</small>
+        </div>
+    </header>
+
+    <!-- ============ ZONE DE CHAT ============ -->
+    <main id="chat" class="chat">
+        <!-- Les messages sont ajoutés ici par JavaScript -->
+    </main>
+
+    <!-- ============ SUGGESTIONS ============ -->
+    <div class="suggestions">
+        <span class="suggestions-label">Suggestions :</span>
+        <button class="chip" onclick="envoyer('tendances')">tendances</button>
+        <button class="chip" onclick="envoyer('prix des films')">prix des films</button>
+        <button class="chip" onclick="envoyer('prix des séries')">prix des séries</button>
+        <button class="chip" onclick="envoyer('tarifs')">tarifs</button>
+    </div>
+
+    <!-- ============ ZONE DE SAISIE ============ -->
+    <footer class="input-area">
+        <div class="input-line">
+            <div class="input-wrap">
+                <input type="text" id="user-input"
+                       placeholder="Pose ta question..."
+                       autocomplete="off">
+            </div>
+            <button class="send-btn" onclick="envoyer()">Envoyer ➤</button>
+        </div>
+        <div class="input-line bottom">
+            <span class="phone-label">📞 +226 45 57 42 17</span>
+            <a class="whatsapp-btn"
+               href="https://wa.me/22645574217?text=Bonjour%20Cin%C3%A9Shop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20vos%20films%2Fs%C3%A9ries."
+               target="_blank">
+                💬 Discuter sur WhatsApp
+            </a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
